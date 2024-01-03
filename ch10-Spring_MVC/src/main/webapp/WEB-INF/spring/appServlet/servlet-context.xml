@@ -51,5 +51,12 @@
 	<!-- 유효성 체크 -->
 	<beans:bean class="kr.spring.ch06.controller.CreateAccountController"/>
 	
+	<!-- 로그인 처리 -->
+	<beans:bean class="kr.spring.ch07.controller.LoginController"/>
+	
+	
+	
+	
+	
 	
 </beans:beans>
