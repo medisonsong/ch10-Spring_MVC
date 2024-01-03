@@ -24,4 +24,9 @@ public class NewArticleVO {
 		this.content = content;
 	}
 	
+	@Override
+	public String toString() {
+		return "NewArticleVO [parentId=" + parentId + ", title=" + title + ", content=" + content + "]";
+	}
+	
 }
