@@ -53,10 +53,24 @@
 	
 	<!-- 로그인 처리 -->
 	<beans:bean class="kr.spring.ch07.controller.LoginController"/>
+	<beans:bean class="kr.spring.ch07.service.LoginService"/>
 	
 	
+	<!-- 파일 업로드를 위한 multipartResolver 설정 -->
+	<beans:bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
+		<beans:property name="maxUploadSize" value="52428800"/> <!-- 52428800 = 50메가를 뜻함(바이트 단위) -->
+		<beans:property name="defaultEncoding" value="UTF-8"/>
+	</beans:bean>
+	
+	<!-- 파일 경로 파일 설정 -->
+	<context:property-placeholder location="classpath:config/file.properties"/>
+	
+	<!-- 파일 업로드 처리 -->
+	<beans:bean class="kr.spring.ch08.controller.SubmitReportController"/>
 	
 	
+	<!-- 어노테이션을 이용한 유효성 체크 -->
+	<beans:bean class="kr.spring.ch09.controller.MemberWriteController"/>
 	
 	
 </beans:beans>
