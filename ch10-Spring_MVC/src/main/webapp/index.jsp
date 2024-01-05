@@ -18,5 +18,8 @@
 <a href="${pageContext.request.contextPath}/login/login.do">LoginController</a><br>
 <a href="${pageContext.request.contextPath}/report/submitReport.do">SubmitReportController</a><br>
 <a href="${pageContext.request.contextPath}/member/write.do">MemberWriteController</a><br>
+<a href="${pageContext.request.contextPath}/file.do">DownloadController</a><br>
+<a href="${pageContext.request.contextPath}/pageRanksExcel.do">PageRanksController</a><br>
+<a href="${pageContext.request.contextPath}/pageJsonReport.do">PageReportController</a><br>
 </body>
 </html>
